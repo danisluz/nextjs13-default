@@ -25,7 +25,7 @@ export default function Home({ dir }) {
         <link rel="icon" href="/favicon.ico" hrefLang="pt" />
       </Head>
       <header>
-        <div>
+        <div className={styles.translation}>
           {[...locales].sort().map((locale) => (
             <Link key={locale} href="/" locale={locale}>
               <div>{locale}</div>
@@ -33,7 +33,7 @@ export default function Home({ dir }) {
           ))}
         </div>
       </header>
-      <main dir={dir} className={`${styles.main}`}>
+      <main dir={dir} className={styles.main}>
         <h1>
           <FormattedMessage id="page.home.title" values={{ b: (info) => <b>{info}</b>}}/>
         </h1>
