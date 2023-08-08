@@ -3,6 +3,7 @@
 ## Languages
   - English
   - French
+  - Portuguese
 
 ## Installations
 

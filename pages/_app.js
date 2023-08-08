@@ -2,15 +2,17 @@ import '@/styles/globals.css'
 import { useRouter } from 'next/router'
 import { IntlProvider } from 'react-intl'
 
-import en from '../i18n/en.json'
 import fr from '../i18n/fr.json'
+import en from '../i18n/en.json'
+import pt from '../i18n/pt.json'
 
 const messages = {
+  fr,
   en,
-  fr
+  pt
 }
 
-function getDirection(locale){
+function getDirection(_locale){
   return "ltr"
 }
 

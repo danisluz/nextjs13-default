@@ -20,13 +20,14 @@ export default function Home({ dir }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="icon" href="/favicon.ico" hrefLang="x-default" />
-        <link rel="icon" href="/favicon.ico" hrefLang="en" />
         <link rel="icon" href="/favicon.ico" hrefLang="fr" />
+        <link rel="icon" href="/favicon.ico" hrefLang="en" />
+        <link rel="icon" href="/favicon.ico" hrefLang="pt" />
       </Head>
       <header>
         <div>
           {[...locales].sort().map((locale) => (
-            <Link key="{locale}" href="/" locale={locale}>
+            <Link key={locale} href="/" locale={locale}>
               <div>{locale}</div>
             </Link>
           ))}
