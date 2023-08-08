@@ -1,4 +1,4 @@
-# Language Translation
+# Next.Js whit Language Translation
 
 ## Languages
   - English
